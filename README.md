@@ -64,7 +64,7 @@
 ```
 
 ## How to use least.js 2
-1. Download least.js 2 from here or "Clone in Desktop" (Button on the right side)
+1. [Download least.js 2 from here](http://leastjs.com/downloads/least.zip) or "Clone in Desktop" (Button on the right side)
 
 2. Add the following code elements before end of ```</head>``` tag.
 
@@ -196,11 +196,11 @@ It's <strong>480px x 300px</strong> for thumbnails and <strong>1920px x 1200px</
 
 ## Changelog
 
-[See the complete list of changes here]().
+[See the complete list of changes here](https://github.com/kamilczujowski/least.js-2/blob/master/CHANGELOG.md).
 
 ## Social, Copyright and License
 
-For News, updates and support follow me [@kamilczujowski on Twitter]()!
-lo
-© Copyright 2014 Kamil Czujowski under [the MIT License (MIT)]().
+For News, updates and support follow me [@kamilczujowski on Twitter](https://twitter.com/kamilczujowski)!
+<br />
+© Copyright 2014 Kamil Czujowski under [the MIT License (MIT)](https://github.com/kamilczujowski/least.js-2/blob/master/LICENSE).
 
