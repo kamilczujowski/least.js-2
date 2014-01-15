@@ -1,6 +1,6 @@
 <div align="center">
   <a href="http://leastjs.com" target="_blank">
-    <img src="http://leastjs.com/src/img/least_logo.svg" alt="least.js 2 - Random and Responsive HiDPI jQuery Gallery based on HTML5 and CSS3">
+     <img src="http://www.leastjs.com/src/img/least_logo.svg">
   </a>
   <br />
   <br />
