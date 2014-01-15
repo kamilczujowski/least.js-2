@@ -1,0 +1,192 @@
+/**
+*** least.js 2
+*** Author: Kamil Czujowski
+*** Version: v2 (0.1)
+*** love. hamburg. 2014 by Kamil Czujowski - All rights reserved.
+*** http://kamilczujowski.de
+**/
+
+/* @group Gallery */
+#least {
+    min-width:100%;
+    width: 100%;
+
+    padding: 0;
+    margin: 0 0 30px 0;
+
+    text-align: center;
+    
+    /* @group Fullimage */
+    .least-preview {
+        background-color: $color-creem;
+
+        border-bottom: 2px solid;
+        border-color: $color-gray-light;
+
+        padding: 50px 0;
+        margin-bottom: 30px;
+        
+        display: none; /* important for Slide-Down Effect */
+        
+        img {
+            width:100%;
+            max-width: $max-fullscreen-size; /* default width: 960px - to edit go to assets/options */
+
+            margin:0 auto;
+            
+            display:block;
+        }
+
+        .close {
+            background-size: 100%;
+            background-image: url('../img/close.svg');
+
+            width: 30px;
+            height: 30px;
+
+            display: block;
+            cursor: pointer;
+
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    }
+    
+    /* @end */
+    
+    /* @group Smallimages */
+    .least-gallery {
+
+        li {
+            position: relative;
+
+            vertical-align: top;
+            display: inline-block;
+
+            margin: 0 10px 10px 0;
+            
+            a {
+                position: relative;
+
+                display: block;
+                text-decoration: none;
+
+                width: $thumbnail-size-width; /* Default width: 240px: to edit go to assets/options */
+                height: $thumbnail-size-height; /* Default height: 150px: to edit go to assets/options */
+                
+                /* @group Outline */
+                @if ($outline) {
+                    @include transition(outline-color);                
+                    outline-color: $color-white;
+                }
+                /* @end */
+
+                img {
+                    width: $thumbnail-size-width; /* Default width: 240px: to edit go to assets/options */
+                    height: $thumbnail-size-height; /* Default height: 150px: to edit go to assets/options */
+                }
+
+                &.active {
+                    outline: 2px solid;
+                    outline-color: $color-gray;
+                }
+
+                &.load {
+                    &:after {
+                        content: $loading; /* Default text: to edit go to assets/options */
+                        position: absolute;
+                        top: 50%;
+                        left: 20px;
+                        right: 20px;
+
+                        z-index: 2;
+
+                        overflow: hidden;
+                        
+                        margin: -20px 0 0 0;
+                        
+                        text-align: center;
+                        text-transform: uppercase;
+
+                        letter-spacing: 1px;
+
+                        color: $color-white;
+                        text-shadow: 1px 1px 1px $color-gray;
+
+                        @include basic-font(30px, 30px, 800);
+                    }
+                }
+
+                &:hover {
+                    
+                    /* @group Outline */
+                    @if ($outline) {
+                        outline: 2px solid;
+                        outline-color: $color-gray;
+                    }
+                    /* @end */
+                    
+                    /* @group Thumbnail Text */
+                    @if ($thumbnail-text) {
+                        &:before {
+                            content: $text-thumbnail-view; /* Default text: "View Picture" - to edit go to assets/options */
+
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+
+                            z-index: 2;
+
+                            overflow: hidden;
+                            
+                            letter-spacing: 1px;
+                            color: $color-white;
+                            text-shadow: 1px 1px 1px $color-gray;  
+
+                            @include basic-font(15px, $thumbnail-size-height+25px, 200);
+                            
+                            width: $thumbnail-size-width; /* Default width: 240px: to edit go to assets/options */
+                            height: $thumbnail-size-height; /* Default height: 150px: to edit go to assets/options */
+                            
+                            @include background-opacity($color-black);
+                        }
+
+                        &:after {
+                            content: attr(title); /* Default text: your a "title"-tag */
+
+                            position: absolute;
+                            top: 50%;
+                            left: 20px;
+                            right: 20px;
+
+                            z-index: 2;
+
+                            overflow: hidden;
+                            
+                            margin: -30px 0 0 0;
+
+                            border-bottom: 2px solid;
+                            border-color: $color-white;
+                            
+                            text-align: center;
+                            text-transform: uppercase;
+                            text-shadow: 1px 1px 1px $color-gray;
+
+                            letter-spacing: 1px;
+
+                            color: $color-white;
+
+                            @include basic-font(20px, 30px, 600);
+                        }
+                    }
+                    /* @end */
+                }
+            }
+        /* @end */
+        }
+    }
+} 
+/* end */

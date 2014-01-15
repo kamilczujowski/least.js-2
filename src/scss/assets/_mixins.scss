@@ -1,0 +1,45 @@
+/**
+*** least.js 2
+*** Author: Kamil Czujowski
+*** Version: v2 (0.1)
+*** love. hamburg. 2014 by Kamil Czujowski - All rights reserved.
+*** http://kamilczujowski.de
+**/
+
+/* @group Mixins */
+@mixin basic-font($size, $height, $weight) {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: $size;
+    line-height: $height;
+    font-weight: $weight;
+}
+
+@mixin transition($property: width, $duration: 0.3s, $effect: ease-in-out) {
+  -webkit-transition-property: $property;
+  -webkit-transition-duration: $duration;
+  -webkit-transition-timing-function: $effect;
+
+  -moz-transition-property: $property;
+  -moz-transition-duration: $duration;
+  -moz-transition-timing-function: $effect;
+
+  -ms-transition-property: $property;
+  -ms-transition-duration: $duration;
+  -ms-transition-timing-function: $effect;
+
+  -o-transition-property: $property;
+  -o-transition-duration: $duration;
+  -o-transition-timing-function: $effect;
+
+  transition-property: $property;
+  transition-duration: $duration;
+  transition-timing-function: $effect;
+
+  -webkit-backface-visibility: hidden;
+}
+
+@mixin background-opacity($color, $opacity: 0.5) {
+    background: $color;
+    background: rgba($color, $opacity);
+}
+/* @end */
