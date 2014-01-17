@@ -203,4 +203,3 @@ It's <strong>480px x 300px</strong> for thumbnails and <strong>1920px x 1200px</
 For News, updates and support follow me [@kamilczujowski on Twitter](https://twitter.com/kamilczujowski)!
 <br />
 © Copyright 2014 Kamil Czujowski under [the MIT License (MIT)](https://github.com/kamilczujowski/least.js-2/blob/master/LICENSE).
-
