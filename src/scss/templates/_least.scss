@@ -1,7 +1,7 @@
 /**
 *** least.js 2
 *** Author: Kamil Czujowski
-*** Version: 2.0.1
+*** Version: 2.1
 *** love. hamburg. 2014 by Kamil Czujowski - All rights reserved.
 *** http://kamilczujowski.de
 **/
@@ -50,6 +50,22 @@
             position: absolute;
             top: 10px;
             right: 10px;
+        }
+
+        article {
+            max-width: 960px;
+            margin: 0 auto;
+
+            text-align: left;
+
+            position: relative;
+            top: 20px;
+
+            @include basic-font(13px, 18px, 400);
+
+            strong {
+                font-weight: 800;
+            }
         }
     }
     

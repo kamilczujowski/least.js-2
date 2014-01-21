@@ -88,7 +88,7 @@
       <ul class="least-gallery">
         <!-- 1th thumbnail -->
           <li>
-            <a href="path-to-your-fullscreen-image default-path:src/media/big/01.jpg" title="AntiVirus">
+            <a href="path-to-your-fullscreen-image default-path:src/media/big/01.jpg" title="AntiVirus" data-caption="<strong>Lorem ipsum dolor</strong> sit amet, consetetur sadipscing" >
               <img src="path-to-your-thumbnail-image default-path:src/media/thumbnails/01.jpg" alt="Alt Image Text" />
             </a>
           </li>
@@ -117,7 +117,7 @@
   ```
   
 ## Options
-least.js 2 has really great options. You can choose between Javascript or CSS3-SASS options.
+least.js 2 has really great options. You can choose between Javascript, CSS3-SASS or HTML-options.
 
 ><strong><u>General Javascript options</u></strong>
 
@@ -179,6 +179,16 @@ To edit the following options (see also below) go to ```src/scss/assets/_options
 	/* @end */
 
 /* @end */
+```
+
+><strong><u>General HTML options</u></strong>
+
+To add a description text into your "image-preview" just use the ```data-caption```-element.
+
+```html
+<a href="path-to-your-fullscreen-image default-path:src/media/big/01.jpg" title="AntiVirus" data-caption="<strong>Lorem ipsum dolor</strong> sit amet, consetetur sadipscing" >
+  <img src="path-to-your-thumbnail-image default-path:src/media/thumbnails/01.jpg" alt="Alt Image Text" />
+</a>
 ```
 
 ## Using the HiDPI option

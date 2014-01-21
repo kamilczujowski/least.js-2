@@ -1,7 +1,7 @@
 /**
 *** least.js 2
 *** Author: Kamil Czujowski
-*** Version: 2.0.1
+*** Version: 2.1
 *** love. hamburg. 2014 by Kamil Czujowski - All rights reserved.
 *** http://kamilczujowski.de
 **/
@@ -17,7 +17,7 @@
 		return this.each(function() {
 
 			/* Open Images */
-			function intipreview(object, path) {
+			function intipreview(object, path, caption) {
 				/*var */
 				var close = $('<figure class="close"></figure>'),
 					img = $('<img src="' + path + '"/>'),
@@ -26,8 +26,13 @@
 				/* Load img */
 				img.load(
 					function() {
-						object
-							.html('')
+						if ( caption.length ) {
+							object.html('<article>' + caption + '</article>');
+						} else {
+							object.html('');
+						}
+
+						object						
 							.prepend(img)
 							.append(close)
 							.slideDown('slow')
@@ -53,7 +58,8 @@
 					var $$ = $(this),
 						path = $$.attr('href'),
 						preview = $('.least-preview'),
-						previewImg = preview.children('img');
+						previewImg = preview.children('img'),
+						caption = $$.attr('data-caption') || '';
 
 					/* Same Image */
 					if ( previewImg.length && path === previewImg.attr('src') ) {
@@ -75,7 +81,8 @@
 							function() {
 								intipreview(
 									preview,
-									path
+									path,
+									caption
 								);
 							}
 						);
@@ -84,11 +91,12 @@
 					} else {
 						intipreview(
 							preview,
-							path
+							path,
+							caption
 						);
 					}
 
-					/* Add spinner */
+					/* Add Loading bar */
 					$$.addClass('load active');
 				}
 			);
