@@ -1,6 +1,6 @@
 {
   "name": "least.js",
-  "version": "2.1",
+  "version": "2.1.0",
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-uglify": "~0.2.2",
