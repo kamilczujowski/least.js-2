@@ -74,7 +74,7 @@
 					if ( previewImg.length ) {
 
 						$$.addClass('active');
-						$('.active').removeClass('active');
+						$('.least-gallery li a.active').removeClass('active');
 
 						preview.slideUp(
 							'slow',
