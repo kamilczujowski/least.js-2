@@ -141,7 +141,7 @@ options: false or true
 <br />
 Show '@2x' images on HiDPI devices
 ```javascript
-default: 'scrollToGallery': true
+default: 'HiDPI': true
 options: false or true
 ```
 
