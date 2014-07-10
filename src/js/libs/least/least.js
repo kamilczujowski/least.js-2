@@ -1,8 +1,8 @@
 /**
 *** least.js 2
-*** Author: Kamil Czujowski
-*** Version: 2.1
-*** love. hamburg. 2014 by Kamil Czujowski - All rights reserved.
+*** Author: Kamil Czujowski - @kamilczujowski
+*** Version: 2.2.0
+*** Made with ♥	in Hamburg, Germany.
 *** http://kamilczujowski.de
 **/
 
@@ -11,7 +11,7 @@
 		var settings = $.extend({
 			'random': true,
 			'scrollToGallery': true,
-			'HiDPI': true
+			'HiDPI': false
 		}, options);
 
 		return this.each(function() {
@@ -74,7 +74,7 @@
 					if ( previewImg.length ) {
 
 						$$.addClass('active');
-						$('.active').removeClass('active');
+						$('.least-gallery li a.active').removeClass('active');
 
 						preview.slideUp(
 							'slow',

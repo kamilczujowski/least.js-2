@@ -35,8 +35,10 @@
         ├── src
         │   └──	css
         │   │	├── least.min.scss	(Minified style.scss)
+        │   │ ├── least.min.css.map (Source map)
         │   └──	img
         │   │	├── close.svg
+        │   │ ├── loading.svg
         │   └──	js
         │   │	└── libs
         │   │	│    └── jquery
@@ -45,6 +47,7 @@
         │   │	└── least
         │   │	│   ├── least.js		(Original .js file)
         │   │	│   ├── least.min.js	(Minified .js file)
+        │   │ │   ├── least.min.map (Source map)
         │   └──	media		    (Image folder)
         │   │	└── big	      (Fullscreen images)
         │   │	│   ├── 01.jpg	    (Default fullscreen)
@@ -88,7 +91,7 @@
       <ul class="least-gallery">
         <!-- 1th thumbnail -->
           <li>
-            <a href="path-to-your-fullscreen-image default-path:src/media/big/01.jpg" title="AntiVirus" data-caption="<strong>Lorem ipsum dolor</strong> sit amet, consetetur sadipscing" >
+            <a href="path-to-your-fullscreen-image default-path:src/media/big/01.jpg" data-subtitle="View Picture" data-caption="Now it's possibe to add an URL-Link into caption text - <a href='http://www.google.com' target='_blank'>GOOGLE</a>" >
               <img src="path-to-your-thumbnail-image default-path:src/media/thumbnails/01.jpg" alt="Alt Image Text" />
             </a>
           </li>
@@ -141,7 +144,7 @@ options: false or true
 <br />
 Show '@2x' images on HiDPI devices
 ```javascript
-default: 'scrollToGallery': true
+default: 'scrollToGallery': false
 options: false or true
 ```
 
@@ -157,7 +160,6 @@ To edit the following options (see also below) go to ```src/scss/assets/_options
 	/* @group Master */
 	$thumbnail-text: true; /* enable (true) or disable (false) thumbnails title text */
 	$outline: true; /* enable (true) or disable (false) thumbnails border */
-	$loading: "Loading..."; /* default "loading" thumbnails text */
 	/* @end */
 
 	/* @group Vars: Colors */
@@ -175,7 +177,6 @@ To edit the following options (see also below) go to ```src/scss/assets/_options
 	/* @group Gallery-Thumbails */
 	$thumbnail-size-width: 240px; /* default "width" size for thumbnails */
 	$thumbnail-size-height: 150px; /* default "height" size for thumbnails */
-	$text-thumbnail-view: "View Picture"; /* default "view picture" text for thumbnails mouseover */
 	/* @end */
 
 /* @end */
@@ -183,11 +184,11 @@ To edit the following options (see also below) go to ```src/scss/assets/_options
 
 ><strong><u>General HTML options</u></strong>
 
-To add a description text into your "image-preview" just use the ```data-caption```-element.
+To add a <strong>headline</strong>, <strong>subheadline</strong> and <strong>caption</strong> text (like headline = Road Trip subheadline ="View picture" and caption="lorem ipsum" ) into your <i>thumbnail & image-preview</i> just use the ```title=""```-element for <strong>headline</strong>, ```data-subtitle=""```-element for <strong>subheadline</strong> and ```data-caption=""```-element for caption text.
 
 ```html
-<a href="path-to-your-fullscreen-image default-path:src/media/big/01.jpg" title="AntiVirus" data-caption="<strong>Lorem ipsum dolor</strong> sit amet, consetetur sadipscing" >
-  <img src="path-to-your-thumbnail-image default-path:src/media/thumbnails/01.jpg" alt="Alt Image Text" />
+<a href="src/media/big/02.jpg" title="Train Rails" data-subtitle="View Picture" data-caption="Now it's possibe to add an URL-Link into caption text - <a href='http://www.google.com' target='_blank'>GOOGLE</a>">
+    <img src="src/media/thumbnails/02.jpg" alt="Alt Image Text" />
 </a>
 ```
 

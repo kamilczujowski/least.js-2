@@ -1,8 +1,8 @@
 /**
 *** least.js 2
-*** Author: Kamil Czujowski
-*** Version: 2.1
-*** love. hamburg. 2014 by Kamil Czujowski - All rights reserved.
+*** Author: Kamil Czujowski - @kamilczujowski
+*** Version: 2.2.0
+*** Made with ♥ in Hamburg, Germany.
 *** http://kamilczujowski.de
 **/
 
@@ -40,7 +40,7 @@
 
         .close {
             background-size: 100%;
-            background-image: url('../img/close.svg');
+            background-image: url('#{$path-img}close.svg');
 
             width: 30px;
             height: 30px;
@@ -74,6 +74,7 @@
     
     /* @group Smallimages */
     .least-gallery {
+        font-size: 0;
 
         li {
             position: relative;
@@ -111,7 +112,7 @@
 
                 &.load {
                     &:after {
-                        content: $loading; /* Default text: to edit go to assets/options */
+                        content: url('#{$path-img}loading.svg');
                         position: absolute;
                         top: 50%;
                         left: 20px;
@@ -147,7 +148,7 @@
                     /* @group Thumbnail Text */
                     @if ($thumbnail-text) {
                         &:before {
-                            content: $text-thumbnail-view; /* Default text: "View Picture" - to edit go to assets/options */
+                            content: attr(data-subtitle); /* Default text: "View Picture" - to edit go change the attr. "data-subtitle" */
 
                             position: absolute;
                             top: 0;

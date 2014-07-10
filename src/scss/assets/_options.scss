@@ -1,17 +1,17 @@
 /**
 *** least.js 2
-*** Author: Kamil Czujowski
-*** Version: 2.1
-*** love. hamburg. 2014 by Kamil Czujowski - All rights reserved.
+*** Author: Kamil Czujowski - @kamilczujowski
+*** Version: 2.2.0
+*** Made with ♥	in Hamburg, Germany.
 *** http://kamilczujowski.de
 **/
 
 /* @group Options */
 
 	/* @group Master */
+	$path-img: '../img/';
 	$thumbnail-text: true; /* enable (true) or disable (false) thumbnails title text */
 	$outline: true; /* enable (true) or disable (false) thumbnails border */
-	$loading: "Loading..."; /* default "loading" thumbnails text */
 	/* @end */
 
 	/* @group Vars: Colors */
@@ -29,7 +29,6 @@
 	/* @group Gallery-Thumbails */
 	$thumbnail-size-width: 240px; /* default "width" size for thumbnails */
 	$thumbnail-size-height: 150px; /* default "height" size for thumbnails */
-	$text-thumbnail-view: "View Picture"; /* default "view picture" text for thumbnails mouseover */
 	/* @end */
 
 /* @end */
