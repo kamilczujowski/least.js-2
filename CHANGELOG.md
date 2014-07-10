@@ -3,10 +3,15 @@
 
 ## V - 2.2.0 (10/07/2014)
 > added new flat close icon
+
 > added new flat loading icon (thx Brent Jackson @jxnblk)
+
 > added codekit config-files
+
 > addes source map for .js and .css files
+
 > added new option: add a link into your caption element
+
 > added new option: title and caption are now editable as html-attribute
 
 ## V - 2.1 (21/01/2014)
