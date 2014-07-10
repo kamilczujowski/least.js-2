@@ -11,7 +11,7 @@
 ## least.js 2
 > Random and Responsive HiDPI jQuery Gallery based on HTML5 and CSS3
 
-## What's new (Update: - 10/07/2014)?
+## What's new? (Update: - 10/07/2014)
 > Version 2.2.0 is available for download now
 <br />
 > [See the complete list of changes here](https://github.com/kamilczujowski/least.js-2/blob/master/CHANGELOG.md).
