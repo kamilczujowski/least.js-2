@@ -1,4 +1,5 @@
 <div align="center">
+  <strong>This plugin is no longer maintained</strong>
   <a href="http://leastjs.com" target="_blank">
      <img src="http://www.leastjs.com/src/img/least_logo.svg">
   </a>
